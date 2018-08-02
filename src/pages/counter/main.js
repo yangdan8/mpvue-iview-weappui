@@ -1,0 +1,15 @@
+import Vue from 'vue'
+import App from './index'
+
+const app = new Vue(App)
+app.$mount()
+
+export default {
+  config: {
+    'navigationBarTitleText': 'Button 按钮',
+    'usingComponents': {
+      'i-button': '/static/libs/iview/button/index',
+      'i-panel': '/static/libs/iview/panel/index'
+    }
+  }
+}
